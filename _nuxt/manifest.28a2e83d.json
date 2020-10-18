@@ -1,0 +1,10 @@
+{
+  "name": "",
+  "short_name": "",
+  "description": "Template Based Validation for Vue.js",
+  "icons": [],
+  "start_url": "/v4/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "lang": "en"
+}
