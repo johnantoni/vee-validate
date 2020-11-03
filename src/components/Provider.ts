@@ -278,9 +278,9 @@ export const ValidationProvider = (Vue as withProviderPrivates).extend({
 
       return triggerThreadSafeValidation(this as ProviderInstance);
     },
-    async validateSilent(): Promise<ValidationResult> {
+    async validateSilent(...args: any[]): Promise<ValidationResult> {
       this.setFlags({ pending: true });
-      const rules = { ...this._resolvedRules, ...this.normalizedRules };
+      const rules = { ...args, ...this._resolvedRules, ...this.normalizedRules };
       Object.defineProperty(rules, '_$$isNormalized', {
         value: true,
         writable: false,
